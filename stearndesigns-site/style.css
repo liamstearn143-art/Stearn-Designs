@@ -270,15 +270,11 @@ header {
    Footer
 ========================= */
 footer {
-  background: #1a1a1a;
-  color: #fff6d9;
-  text-align: center;
-  padding: 5px 0;
-  margin-top: 50px;
-}
-
-footer .wrap {
-  max-width: 100%;  /* override your normal container limit */
+  background: #1a1a1a;     /* dark footer background */
+  color: #fff6d9;          /* lighter text */
+  text-align: center;   /* center the text */
+  padding: 1rem 0;      /* space above and below */
+  width: 100%;          /* make sure it spans the screen */
 }
 
 /* =========================
