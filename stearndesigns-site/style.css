@@ -33,8 +33,8 @@ a {
    Top Scrolling Banner
 ========================= */
 .ticker {
-  background: #000;
-  color: #fff;
+  background: #1a1a1a;
+  color: #fff6d9;
   overflow: hidden;
   height: 40px;
 }
@@ -59,7 +59,7 @@ a {
    Header / Navigation
 ========================= */
 header {
-  background: #111;
+  background: #1a1a1a;
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -161,7 +161,7 @@ header {
 }
 
 .hero__content .cta .btn:hover {
-  background: #00aabb;
+  background: #434343;
 }
 
 .btn--ghost {
@@ -244,7 +244,7 @@ header {
 
 .tile:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px #00ffff;
+  box-shadow: 0 0 15px #434343;
 }
 
 .tile__img {
