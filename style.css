@@ -24,9 +24,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff6d9;
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
 
 a {
   text-decoration: none;
@@ -178,12 +186,6 @@ header {
   margin-bottom: 2rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero__content h1 { font-size: 2rem; }
-  .hero__content p { font-size: 1rem; }
-}
-
 /* =========================
    Buttons
 ========================= */
@@ -195,8 +197,8 @@ header {
   font-weight: 600;
   border-radius: 6px;
   text-decoration: none;
-  color: #121212;               /* dark text */
-  background: #fff6d9;          /* pale yellow */
+  color: #121212;
+  background: #fff6d9;
   border: 2px solid #fff6d9;
   transition: all 0.3s ease;
 }
@@ -206,7 +208,6 @@ header {
   color: #fff6d9;
 }
 
-/* Ghost button (outline style) */
 .btn--ghost {
   background: transparent;
   color: #fff6d9;
@@ -218,10 +219,15 @@ header {
   color: #121212;
 }
 
-/* Mobile responsiveness */
+/* Responsive button layout */
+.cta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 600px) {
   .cta {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -233,9 +239,8 @@ header {
   }
 }
 
-
 /* =========================
-   Features Section
+   Features Section (Three Boxes)
 ========================= */
 .features .grid-3 {
   display: flex;
@@ -269,12 +274,22 @@ header {
   transform: scale(1.05);
 }
 
-.card__body { padding: 15px; }
-.card__title { margin-bottom: 10px; font-size: 1.2rem; }
-.card__text { font-size: 0.95rem; color: #ccc; }
+.card__body {
+  padding: 15px;
+}
+
+.card__title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card__text {
+  font-size: 0.95rem;
+  color: #ccc;
+}
 
 /* =========================
-   Projects Section
+   Projects Section (Six Tiles)
 ========================= */
 .projects .grid-6 {
   display: flex;
@@ -296,10 +311,24 @@ header {
   box-shadow: 0 0 15px #434343;
 }
 
-.tile__img { width: 100%; display: block; }
-.tile__meta { padding: 10px; }
-.tile__meta h3 { font-size: 1rem; margin-bottom: 5px; }
-.tile__meta p { font-size: 0.85rem; color: #ccc; }
+.tile__img {
+  width: 100%;
+  display: block;
+}
+
+.tile__meta {
+  padding: 10px;
+}
+
+.tile__meta h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.tile__meta p {
+  font-size: 0.85rem;
+  color: #ccc;
+}
 
 /* =========================
    Footer
@@ -316,17 +345,27 @@ footer {
    Responsive
 ========================= */
 @media (max-width: 900px) {
-  .features .grid-3,
-  .projects .grid-6 {
+  .features .grid-3, .projects .grid-6 {
     flex-direction: column;
     flex: 1 1 100%;
   }
 
-  .hero__content h1 { font-size: 2rem; }
-  .hero__content p { font-size: 1rem; }
+  .hero__content h1 {
+    font-size: 2rem;
+  }
 
-  .menu a { margin-left: 1rem; }
-  .burger { display: flex; }
+  .hero__content p {
+    font-size: 1rem;
+  }
+
+  .menu a {
+    margin-left: 1rem;
+  }
+
+  .burger {
+    display: flex;
+  }
 }
+
 
 
