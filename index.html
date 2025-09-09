@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>YourStudio</title>
 
   <!-- Link CSS -->
@@ -39,24 +39,27 @@
           <a href="contact.html">Contact</a>
         </div>
       </nav>
-      <button class="burger"><span></span><span></span><span></span></button>
+      <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <video class="hero__video" autoplay muted loop playsinline preload="metadata">
-      <source src="assets/showreel-test.mp4" type="video/mp4">
+  <section class="hero" id="hero">
+    <video id="heroVideo" class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" aria-hidden="true">
+      <source src="assets/hero-showreel.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="hero__overlay"></div>
-    <div class="hero__content wrap">
+
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content wrap" id="heroContent">
       <div class="eyebrow">Design · Motion · Web</div>
       <h1>Creative that moves people.</h1>
       <p>Portfolio-driven studio crafting brand identities, dynamic websites, and scroll-stopping content.</p>
-      <div class="cta">
-        <a class="btn" href="portfolio.html">View Portfolio</a>
-        <a class="btn btn--ghost" href="contact.html">Start a Project</a>
+
+      <div class="cta" role="group" aria-label="Primary calls to action">
+        <a class="btn" href="portfolio.html" role="button" aria-label="View Portfolio">View Portfolio</a>
+        <a class="btn btn--ghost" href="contact.html" role="button" aria-label="Start a Project">Start a Project</a>
       </div>
     </div>
   </section>
@@ -111,7 +114,8 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
+
 
