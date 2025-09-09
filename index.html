@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YourStudio</title>
+
+  <!-- Link CSS -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -47,6 +47,7 @@
   <section class="hero">
     <video autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg">
       <source src="assets/hero-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
     <div class="hero__content wrap">
       <div class="eyebrow">Design · Motion · Web</div>
@@ -63,21 +64,21 @@
   <section class="features wrap">
     <div class="grid-3">
       <article class="card">
-        <img class="card__img" src="assets/brand.jpg" alt="">
+        <img class="card__img" src="assets/brand.jpg" alt="Brand work">
         <div class="card__body">
           <h3 class="card__title">Brand Systems</h3>
           <p class="card__text">Logo suites, guidelines, and assets for cohesive storytelling.</p>
         </div>
       </article>
       <article class="card">
-        <img class="card__img" src="assets/web.jpg" alt="">
+        <img class="card__img" src="assets/web.jpg" alt="Web & UI work">
         <div class="card__body">
           <h3 class="card__title">Web & UI</h3>
           <p class="card__text">Fast, accessible sites with motion that feels alive.</p>
         </div>
       </article>
       <article class="card">
-        <img class="card__img" src="assets/motion.jpg" alt="">
+        <img class="card__img" src="assets/motion.jpg" alt="Motion content">
         <div class="card__body">
           <h3 class="card__title">Content & Motion</h3>
           <p class="card__text">Short-form edits, reels, and product visuals for growth.</p>
@@ -93,18 +94,20 @@
       <a class="btn btn--ghost" href="portfolio.html">See all</a>
     </div>
     <div class="grid-6">
-      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj1.jpg"><div class="tile__meta"><h3>Project 1</h3><p>Product · UI/UX</p></div></a></article>
-      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj2.jpg"><div class="tile__meta"><h3>Project 2</h3><p>Brand · Packaging</p></div></a></article>
-      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj3.jpg"><div class="tile__meta"><h3>Project 3</h3><p>Website · Motion</p></div></a></article>
-      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj4.jpg"><div class="tile__meta"><h3>Project 4</h3><p>Campaign · Social</p></div></a></article>
-      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj5.jpg"><div class="tile__meta"><h3>Project 5</h3><p>Brand · Strategy</p></div></a></article>
-      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj6.jpg"><div class="tile__meta"><h3>Project 6</h3><p>3D · Motion</p></div></a></article>
+      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj1.jpg" alt="Project 1"><div class="tile__meta"><h3>Project 1</h3><p>Product · UI/UX</p></div></a></article>
+      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj2.jpg" alt="Project 2"><div class="tile__meta"><h3>Project 2</h3><p>Brand · Packaging</p></div></a></article>
+      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj3.jpg" alt="Project 3"><div class="tile__meta"><h3>Project 3</h3><p>Website · Motion</p></div></a></article>
+      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj4.jpg" alt="Project 4"><div class="tile__meta"><h3>Project 4</h3><p>Campaign · Social</p></div></a></article>
+      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj5.jpg" alt="Project 5"><div class="tile__meta"><h3>Project 5</h3><p>Brand · Strategy</p></div></a></article>
+      <article class="tile"><a href="#"><img class="tile__img" src="assets/proj6.jpg" alt="Project 6"><div class="tile__meta"><h3>Project 6</h3><p>3D · Motion</p></div></a></article>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <small>© 2025 YourStudio. All rights reserved.</small>
+    <div class="wrap">
+      <small>© 2025 YourStudio. All rights reserved.</small>
+    </div>
   </footer>
 
   <script src="script.js"></script>
