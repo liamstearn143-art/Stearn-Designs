@@ -185,6 +185,56 @@ header {
 }
 
 /* =========================
+   Buttons
+========================= */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #121212;               /* dark text */
+  background: #fff6d9;          /* pale yellow */
+  border: 2px solid #fff6d9;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #fff6d9;
+}
+
+/* Ghost button (outline style) */
+.btn--ghost {
+  background: transparent;
+  color: #fff6d9;
+  border: 2px solid #fff6d9;
+}
+
+.btn--ghost:hover {
+  background: #fff6d9;
+  color: #121212;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+}
+
+
+/* =========================
    Features Section
 ========================= */
 .features .grid-3 {
