@@ -51,9 +51,8 @@ a{text-decoration:none;color:inherit}
   color: #fff6d9;
   overflow: hidden;
   height: 40px;
-  display: flex;               /* enables flexbox */
-  align-items: center;         /* vertical centering */
-  position: relative;
+  display: flex;
+  align-items: center;  /* ✅ vertical centering */
 }
 
 .ticker__track {
@@ -67,7 +66,9 @@ a{text-decoration:none;color:inherit}
   padding: 0 2rem;
   white-space: nowrap;
   font-size: 0.95rem;
-  line-height: 1;              /* keeps text vertically consistent */
+  line-height: 1;       /* tight text box */
+  display: flex;        /* ✅ center within itself */
+  align-items: center;
 }
 
 /* Keyframes for infinite horizontal scroll */
