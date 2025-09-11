@@ -96,3 +96,18 @@ function initVideoFallback() {
   });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const titles = document.querySelectorAll(".dynamic-title");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        // Remove the line below if you want it to re-trigger on scroll back up
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  titles.forEach(title => observer.observe(title));
+});
