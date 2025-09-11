@@ -96,18 +96,4 @@ function initVideoFallback() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const titles = document.querySelectorAll(".dynamic-title");
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-
-  titles.forEach(title => observer.observe(title));
-});
 
