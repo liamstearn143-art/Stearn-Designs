@@ -253,20 +253,6 @@ header{background:var(--panel);padding:.5rem 0;position:sticky;top:0;z-index:100
   grid-template-columns: repeat(5, 1fr);
 }
 
-/* Heading slide-in from left */
-.dynamic-title {
-  text-align: left;
-  font-size: 2.5rem;
-  margin: 0 0 1.5rem 0; /* reduce bottom margin for tighter spacing */
-  opacity: 0;
-  transform: translateX(-30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.dynamic-title.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
 
 /* Reduce space between feature cards */
 .grid-5 {
