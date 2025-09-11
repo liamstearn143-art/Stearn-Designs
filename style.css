@@ -320,4 +320,15 @@ footer{background:var(--panel);color:var(--accent);text-align:center;padding:1re
   .btn{border-radius:10px;padding:.9rem 1.2rem}
 }
 
+/* Logo size */
+.logo_img {
+  height: 40px;   /* adjust this to taste (e.g., 30px, 50px) */
+  width: auto;    /* keeps the aspect ratio */
+}
+
+@media (max-width: 600px) {
+  .logo_img {
+    height: 30px; /* smaller logo on mobile */
+  }
+}
 
