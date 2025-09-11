@@ -322,7 +322,7 @@ footer{background:var(--panel);color:var(--accent);text-align:center;padding:1re
 
 /* Logo size */
 .logo_img {
-  height: 40px;   /* adjust this to taste (e.g., 30px, 50px) */
+  height: 60px;   /* adjust this to taste (e.g., 30px, 50px) */
   width: auto;    /* keeps the aspect ratio */
 }
 
