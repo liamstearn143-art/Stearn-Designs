@@ -238,6 +238,21 @@ header{background:var(--panel);padding:.5rem 0;position:sticky;top:0;z-index:100
   }
 }
 
+/* Make features section full-width */
+.features.full-width {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 40px 2rem; /* some breathing room */
+  background: var(--panel); /* optional background color */
+}
+
+/* Ensure the grid stretches full width */
+.features.full-width .grid-5 {
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 
 
 /* Projects */
