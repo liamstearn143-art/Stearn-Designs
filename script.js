@@ -103,7 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        // Remove the line below if you want it to re-trigger on scroll back up
         observer.unobserve(entry.target);
       }
     });
@@ -111,3 +110,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   titles.forEach(title => observer.observe(title));
 });
+
