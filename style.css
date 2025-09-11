@@ -177,7 +177,7 @@ header{background:var(--panel);padding:.5rem 0;position:sticky;top:0;z-index:100
 .grid-5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 /* Card styling */
@@ -253,21 +253,42 @@ header{background:var(--panel);padding:.5rem 0;position:sticky;top:0;z-index:100
   grid-template-columns: repeat(5, 1fr);
 }
 
-/* Start hidden */
+/* Heading slide-in from left */
 .dynamic-title {
-  text-align: center;
+  text-align: left;
   font-size: 2.5rem;
-  margin: 0 auto 2rem auto;
+  margin: 0 0 1.5rem 0; /* reduce bottom margin for tighter spacing */
   opacity: 0;
-  transform: translateY(15px);
+  transform: translateX(-30px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Active (when scrolled into view) */
 .dynamic-title.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
+
+/* Reduce space between feature cards */
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem; /* was 2rem — tighter spacing */
+}
+
+@media (max-width: 1024px) {
+  .grid-5 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* keep spacing consistent */
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-5 {
+    grid-template-columns: 1fr;
+    gap: 0.75rem; /* even tighter on small screens */
+  }
+}
+
 
 
 
