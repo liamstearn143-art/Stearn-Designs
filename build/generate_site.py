@@ -144,7 +144,7 @@ def build_index():
           <p class="eyebrow">Get In Touch</p>
           <h2>Start Your Project</h2>
           <p>Tell me a little about what you're working on and I'll come back to you within a couple of days with next steps.</p>
-          <div class="contact__detail"><span>Email</span><a href="mailto:liam@stearndesigns.co.uk">liam@stearndesigns.co.uk</a></div>
+          <div class="contact__detail"><span>Email</span><a href="mailto:liam@stearndesigns.com">liam@stearndesigns.com</a></div>
           <div class="contact__detail"><span>Location</span><span>United Kingdom</span></div>
           <div class="contact__detail"><span>Social</span><span>Instagram &middot; LinkedIn &middot; Behance</span></div>
         </div>
