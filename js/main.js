@@ -233,7 +233,7 @@ document.documentElement.classList.add('js');
     Until then, the form gracefully falls back to opening the user's email client.
   */
   const ENDPOINT = ''; // e.g. 'https://formspree.io/f/yourFormId'
-  const FALLBACK_EMAIL = 'liam@stearndesigns.co.uk';
+  const FALLBACK_EMAIL = 'liam@stearndesigns.com';
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
